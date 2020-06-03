@@ -5,17 +5,17 @@ import { withReducer } from "../../redux/withReducer";
 import { useSelector, useDispatch } from "react-redux";
 function Home() {
   const dispatch = useDispatch();
-  const counter = useSelector(state => state.Home.counter);
-  const onClickIncrement = e => {
+  const counter = useSelector((state) => state.Home.counter);
+  const onClickIncrement = (e) => {
     e.preventDefault();
     dispatch(Action.handleIncrement());
   };
-  const onClickDecrement = e => {
+  const onClickDecrement = (e) => {
     e.preventDefault();
     dispatch(Action.handleDecrement());
   };
   return (
-    <div>
+    <div className="bg-black">
       <p>{counter}</p>
       <button onClick={onClickIncrement}>Increament</button>
       <button onClick={onClickDecrement}>Decreament</button>

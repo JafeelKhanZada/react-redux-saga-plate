@@ -4,6 +4,7 @@ import App from "./js/App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
 import store from "./js/redux/store";
+import "./tailwind.generated.css";
 const Index = () => {
   return (
     <React.StrictMode>
